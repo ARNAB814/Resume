@@ -1,0 +1,152 @@
+
+
+\documentclass[10pt]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage{inter}
+\renewcommand*\familydefault{\sfdefault}
+
+\usepackage{geometry}
+\geometry{
+    a4paper,
+    top=1.8cm,
+    bottom=1in,
+    left=2cm,
+    right=2cm
+}
+
+\setcounter{secnumdepth}{0}
+\pdfgentounicode=1
+
+\usepackage{enumitem}
+\setlist[itemize]{
+    noitemsep,
+    left=0pt..1.5em
+}
+\setlist[description]{itemsep=0pt}
+\setlist[enumerate]{align=left}
+
+\usepackage[dvipsnames]{xcolor}
+\colorlet{icnclr}{gray}
+
+\usepackage{titlesec}
+\titlespacing{\subsection}{0pt}{*0}{*0}
+\titlespacing{\subsubsection}{0pt}{*0}{*0}
+
+\titleformat{\section}{\color{Sepia}\large\fontseries{black}\selectfont\uppercase}{}{}{\ruleafter}[\global\RemVStrue]
+\titleformat{\subsection}{\medium\fontseries{semibold}\selectfont}{}{}{\rvs}
+\titleformat{\subsubsection}{\large\fontseries{medium}\selectfont}{}{}{}
+
+\usepackage{xhfill}
+\newcommand\ruleafter[1]{#1~\xrfill[.5ex]{1pt}[gray]}
+
+\newif\ifRemVS
+\newcommand{\rvs}{
+    \ifRemVS
+        \vspace{-1.5ex}
+    \fi
+    \global\RemVSfalse
+}
+
+\usepackage{fontawesome5}
+
+\usepackage[bookmarks=false]{hyperref}
+\hypersetup{
+    colorlinks=true,
+    urlcolor=Sepia,
+    pdftitle={Arunav Saha's Resume},
+}
+
+\usepackage[page]{totalcount}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{0pt}
+\fancyhf{}
+\cfoot{\color{darkgray} Arunav R\'esum\'e -- Page \thepage{} of \totalpages}
+
+\begin{document}
+
+\begin{center}
+    {\fontsize{32}{32}\selectfont\interthin ARUNAV SAHA} \\ \bigskip
+    {\color{icnclr}\faEnvelope[regular]} \href{mailto:arunavs@mun.ca}{arunavs@mun.ca} $|$ 
+    {\color{icnclr}\faIcon{mobile-alt}} \href{tel:+17092199167}{+1 (709) 219 9167} $|$
+    {\color{icnclr}\faLinkedinIn} \href{https://www.linkedin.com/in/arunavsaha/}{linkedin.com/in/arunavsaha/} $|$
+    {\color{icnclr}\faGithub} \href{https://github.com/ARNAB814}{github.com/ARNAB814} $|$
+    {\color{icnclr}\faGlobe} \href{http://waitingtodeploy.com}{waitingtodeploy.com}
+\end{center}
+
+\section{Experiences}
+\subsection{Autonomous Vehicle Researcher — Memorial University \hfill May 2023 - Dec 2023}
+\begin{itemize}
+    \item Conducted simulations to enhance edge computing efficiency in Autonomous Vehicles
+    \item Investigated Ems vehicles, lane allocation, variable speed, and v2v communication
+\end{itemize}
+
+\subsection{Resident Assistant — Memorial University Residences \hfill May 2022 - Present}
+\begin{itemize}
+    \item Best RA award 22–23 year
+    \item Skills: Leadership, communication, conflict management, first aid
+\end{itemize}
+
+\subsection{Coding Instructor — Memorial Engineering Outreach \hfill June 2023 - August 2023}
+\begin{itemize}
+    \item Provided coding lessons for young people, grades 1 - 12 (Python, Java, Arduino)
+    \item Conducted cybersecurity and privacy management sessions
+    \item Worked on robotics projects and troubleshooted various apps and systems
+\end{itemize}
+
+\subsection{AI Policy Researcher — MUN Governance Secretariat \hfill January 2023 - June 2023}
+\begin{itemize}
+    \item Conducted research on the impact of generational AI on academic plagiarism
+    \item Submitted a report and proposed countermeasures for University Policy
+\end{itemize}
+
+\subsection{Professional Photographer — Memorial University \hfill November 2021 - August 2023}
+\begin{itemize}
+    \item Engaged in digital marketing, event coverage, portrait, and architectural photography
+    \item Collaborated with the residence marketing department to create promotional materials
+\end{itemize}
+
+\section{Education}
+\subsection{Bachelor of Computer Science, Memorial University \hfill June 2021 - Present}
+\begin{itemize}
+    \item Maintained an 82\%+ average in core courses
+    \item Received a 100\% International Undergraduate Entrance Scholarship
+\end{itemize}
+
+\section{Tech Skills}
+\begin{description}
+    \item[Programming Languages] Proficient: Python, Java, C++, JavaScript. Familiar: C, C#.
+    \item[Web Development] Proficient: HTML, CSS, Astro, Node.js. Familiar: React, Flutter.
+    \item[Other:] Arduino, TinkerCad, Unreal Engine, Unity, Linux, Photoshop, Luminar AI, Pandas.
+\end{description}
+
+
+\section{Projects}
+\subsection{Portfolio Website: \href{http://waitingtodeploy.com}{waitingtodeploy.com} \hfill }
+\begin{itemize}
+    \item Designed and developed a personal portfolio website to showcase projects, skills, and achievements
+    \item Implemented using HTML, CSS, and JavaScript (Node.js and React framework) for a responsive and interactive user experience
+    \item Integrated multiple APIs to dynamically import information for enhanced content and interactivity
+\end{itemize}
+
+\subsection{Ninja Adventures (C++ with SFML/ImGui) - 2D Platformer \hfill }
+\begin{itemize}
+    \item ECS architecture with SFML and ImGui
+    \item Core Features:
+    \begin{itemize}
+        \item Main menu, overworld map, and dynamic in-game elements
+        \item Notable mechanics: Multiple abilities, swappable weapons, and AI-driven NPCs
+        \item Comprehensive UI, parallax for depth, and dynamic game progression
+    \end{itemize}
+\end{itemize}
+
+\subsection{VR Simulation (Unity Engine, SteamVR, Oculus) \hfill }
+\begin{itemize}
+    \item Virtual Reality project designing a scenario with an event chain
+    \item Contributed to world-building, asset generation, and implemented minor functionalities
+    \item Due to NDA constraints, specific details cannot be disclosed
+\end{itemize}
+
+
+\end{document}
